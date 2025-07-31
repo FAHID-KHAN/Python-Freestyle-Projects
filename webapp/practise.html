@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-section {
+            text-align: center;
+            margin: 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image-section p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .image-section a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .image-section a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Search your image here </h2>
+        <input type="search" placeholder="Search for pandas, cats, dogs...">
+        <button type=" submit"> Search</button>
+
+    </header> 
+    <main>
+        <section class="image-section">
+            <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Panda Image">
+            <p>Image of a panda</p>
+            <a href="https://unsplash.com/photos/8cc77767d783" target="_blank">View on Unsplash</a>
+        </section>
+        <section>
+            <fieldset>
+                <legend> Feedback Form </legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="datetime">Date:</label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+                <br>
+                <label for="feedback">Feedback:</label>
+                <textarea id=" feedback" name="feedback" rows=" 4" cols="50" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </section>
+    </main>   
+</body>
+</html>
